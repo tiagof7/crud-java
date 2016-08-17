@@ -25,6 +25,10 @@ public class Client extends BaseEntity {
 	@OneToMany(targetEntity = Phone.class, fetch = FetchType.EAGER)
 	@JoinColumn(name = "client_id")
 	private List<Phone> phone;
+	
+	public Client(){
+		
+	}
 
 	public String getCpf() {
 		return cpf;

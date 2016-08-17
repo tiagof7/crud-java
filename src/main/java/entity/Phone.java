@@ -6,6 +6,10 @@ import javax.persistence.Entity;
 public class Phone extends BaseEntity {
 
 	private String phoneNumber;
+	
+	public Phone(){
+		
+	}
 
 	public String getPhoneNumber() {
 		return phoneNumber;
