@@ -41,24 +41,21 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
-			<version>1.8.0.RC1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mysema.querydsl</groupId>
+			<artifactId>querydsl-jpa</artifactId>
+			<version>3.7.4</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
 			<version>1.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-commons</artifactId>
-			<version>1.7.3.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jaxrs</artifactId>
-			<version>3.0.6.Final</version>
-			<scope>provided</scope>
-		</dependency>
+		<!-- <dependency> <groupId>org.springframework.data</groupId> <artifactId>spring-data-commons</artifactId> 
+			</dependency> -->
+		<!-- <dependency> <groupId>org.jboss.resteasy</groupId> <artifactId>resteasy-jaxrs</artifactId> 
+			<version>3.0.6.Final</version> <scope>provided</scope> </dependency> -->
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-grizzly</artifactId>
@@ -69,6 +66,17 @@
 			<artifactId>grizzly-servlet-webserver</artifactId>
 			<version>1.9.18-i</version>
 		</dependency>
+		<dependency>
+			<groupId>com.sun.grizzly</groupId>
+			<artifactId>grizzly-http</artifactId>
+			<version>2.0.0-RC1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -79,7 +87,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>
+				<version>3.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>

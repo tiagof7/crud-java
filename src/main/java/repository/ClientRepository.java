@@ -1,11 +1,8 @@
 package repository;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-
+import repository.base.AbstractRepository;
 import entity.Client;
 
-@Repository
-public interface ClientRepository extends CrudRepository<Client, Long>{
+public interface ClientRepository extends AbstractRepository<Client, Long> {
 
 }

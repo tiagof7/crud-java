@@ -16,9 +16,7 @@ public class Main {
       
       System.out.println("Starting grizzly...");
       SelectorThread threadSelector = GrizzlyWebContainerFactory.create(baseUri, initParams);
-      System.out.println(String.format("Jersey started with WADL available at %sapplication.wadl.",baseUri, baseUri));
-
-    
+      System.out.println(String.format("Jersey started with WADL available at %s",baseUri, baseUri));
 
   }
 
