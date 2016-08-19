@@ -1,4 +1,4 @@
-package entity;
+package com.crudjava.entity;
 
 import java.io.Serializable;
 import java.util.List;
@@ -16,11 +16,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
+@Table(name="client", schema="public")
 public class Client implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id

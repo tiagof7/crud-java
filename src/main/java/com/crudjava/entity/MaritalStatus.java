@@ -1,4 +1,4 @@
-package entity;
+package com.crudjava.entity;
 
 public enum MaritalStatus {
 	SINGLE("SINGLE"), 
